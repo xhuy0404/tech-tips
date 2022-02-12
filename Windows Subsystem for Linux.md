@@ -7,7 +7,7 @@ Here are my experiences about it :
 # Enable WSL/WSL2 on your Windows PC
 Just a shorter version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual .
 
-- Open a terminal app (I suggest "Windows Terminal", it is very useful later) as administrator
+- Open a terminal app as administrator
 - 
 
 
