@@ -4,10 +4,9 @@ But in my case, I just need its tool, not the whole GUI so WSL is the best solut
 
 Here are my experiences about it : 
 
-# Step 1 : Enable WSL/WSL2 on your Windows PC
-
-I'm no
+# Enable WSL/WSL2 on your Windows PC
 Just a shorter version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual .
+
 - Open a terminal app (I suggest "Windows Terminal", it is very useful later) as administrator
 - 
 
