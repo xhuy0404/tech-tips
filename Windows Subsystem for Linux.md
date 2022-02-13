@@ -2,10 +2,10 @@
 Just-the-recipes version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 Make sure you enabled **Virtualization** in your **BIOS** before doing this.  
-- Use this command to enable **WSL** feature (as administrator) :  
+- Use this command in a terminal app (as administrator) to enable **Windows Subsystem for Linux** feature :  
   ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```  
   
-- Then enable **Virtual Machine** feature :  
+- Then enable **Virtual Machine Platform** feature :  
   ```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```  
   
 - Restart your computer to complete the installation : ```shutdown /r```  
@@ -35,10 +35,10 @@ But I like somthing special, I went with :
 ### Initialize package manager  
 - Refresh Pacman GPG keys (It will take a while) :  
   ```  
-  pacman-key --init  
-  pacman-key --populate  
-  pacman-key --refresh-keys  
-  pacman -Sy archlinux-keyring --noconfirm  
+  pacman-key --init
+  pacman-key --populate
+  pacman-key --refresh-keys
+  pacman -Sy archlinux-keyring --noconfirm
   ```  
 > Tip : You can use this command to clear the screen : ```clear```  
   
