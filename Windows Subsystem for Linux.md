@@ -68,11 +68,3 @@ You can finds everything else you need on the Internet. Keep learning !⚡
 - [Gentoo Linux introduction page](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/About#Welcome)  
 - [Original guide](https://wiki.gentoo.org/wiki/Gentoo_in_WSL)
 
-# III. Some tips on Linux ✨  
-## 1. ZSH with Powerlevel10k  
-### ZSH installtion  
-  
-### Powerlevel10k customization  
-  
-## 2. Visual Studio Code  
-
