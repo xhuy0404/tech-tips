@@ -40,15 +40,15 @@ But I like somthing special, I went with :
   pacman-key --refresh-keys
   pacman -Sy archlinux-keyring --noconfirm  
   ```
-> Tip : You can use this command to clear the screen : ```clear```  
+> Tip : You can use this command to clear the terminal screen : ```clear```  
   
 - Then run ```pacman -Syyu``` to update all packages to the latest versions  
-> When asked question on hwdi/adwaita, choose whaterver you want :)  
+> When asked question on hwids, choose yes (default option)  
 ### Create a user  
-- Uncomment ```%wheel ALL=(ALL) NOPASSWD: ALL``` and ```%sudo ALL=(ALL) ALL``` in ```/etc/sudoers``` :  
+- Uncomment ```%wheel ALL=(ALL:ALL) ALL``` and ```%sudo ALL=(ALL) ALL``` in ```/etc/sudoers``` :  
   ```  
-  sed "/NOPASSWD/s/^#//g" -i /etc/sudoers  
-  sed "/%sudo/s/^#//g" -i /etc/sudoers  
+  sed '82s/^#//' -i /etc/sudoers  
+  sed '88s/^#//' -i /etc/sudoers  
   ```  
   
 - Add a new admin user (replace **xhuy0** with your username) : ```useradd -m -G wheel xhuy0```  
@@ -58,7 +58,11 @@ But I like somthing special, I went with :
 - Set default user : ```echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf```  
 
 ### Finalize  
-- Finalize the installation : ```wsl --shutdown```  
+- Open a Windows shell : ```cmd.exe```  
+  
+<!-- - Set default user : ```C:\Arch\Arch.exe config --default-user```   -->
+  
+- Shutdown the WSL : ```wsl --shutdown```  
   
 Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
 
@@ -78,7 +82,7 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
   ```  
   
 ### Install ZSH & Powerlevel10k (Optional)  
-
+- Install zsh & powerlevel10k : ```sudo pacman -S zsh zsh-theme-powerlevel10k```  
   
 ## Option 2 - Gentoo Linux installation guide (Still Compiling)
 ### References :  
