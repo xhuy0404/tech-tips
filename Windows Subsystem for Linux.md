@@ -68,7 +68,7 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
 
 **Welcome to Arch Linux !**  
 
-### Install AUR Helper (Optional)
+### Install AUR Helper - yay (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
 - ```sudo pacman -S base-devel git openssh go```  
 > When asked question on fakeroot and fakeroot-tcp, choose whatever you want :)  
@@ -82,7 +82,8 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
   ```  
   
 ### Install ZSH & Powerlevel10k (Optional)  
-- Install zsh & powerlevel10k : ```sudo pacman -S zsh zsh-theme-powerlevel10k```  
+- Install zsh : ```sudo pacman -S zsh```  
+
   
 ## Option 2 - Gentoo Linux installation guide (Still Compiling)
 ### References :  
