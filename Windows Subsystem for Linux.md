@@ -25,7 +25,7 @@ But I like somthing special, I went with :
 
   
 ## Option 1 - Arch Linux installation guide  
-### References :  
+### References  
 - [Arch Linux introduction page](https://wiki.archlinux.org/title/Arch_Linux)  
 - [Original guide](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b)  
 
@@ -35,7 +35,7 @@ But I like somthing special, I went with :
 - Then start Arch by run **Arch.exe** again.  
   
 ### Initialize package manager  
-- Refresh Pacman GPG keys :  
+- Refresh Pacman GPG keys :    
   ```  
   pacman-key --init  
   pacman-key --populate  
@@ -59,6 +59,7 @@ But I like somthing special, I went with :
 - Set the password for that user : ```passwd xhuy0```  
   
 - Set default user : ```echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf```  
+### Finalize
 
 **Welcome to Arch Linux !**  
 You can finds everything else you need on the Internet. Keep learning !⚡  
