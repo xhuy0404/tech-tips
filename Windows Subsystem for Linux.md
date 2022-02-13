@@ -11,7 +11,7 @@ Make sure you enabled **Virtualization** in your BIOS before doing this.
 - Step 3 : Then enable **Virtual Machine** feature :  
   ```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```
   
-- Step 4 : Restart your computer to complete the installation  
+- Step 4 : Restart your computer to complete the installation : ```shutdown /r```   
 
 - Step 5 : Then update/install WSL : ```wsl --update```   
 
