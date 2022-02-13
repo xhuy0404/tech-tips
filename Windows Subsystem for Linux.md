@@ -2,27 +2,23 @@
 Just-the-recipes version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 Make sure you enabled **Virtualization** in your BIOS before doing this.  
-
-- Step 1 : Open a terminal app as administrator  
-
-- Step 2 : Use this command to enable **WSL** feature :  
-  ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```
+- Use this command to enable **WSL** feature (as administrator) :  
+  ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```  
   
-- Step 3 : Then enable **Virtual Machine** feature :  
-  ```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```
+- Then enable **Virtual Machine** feature :  
+  ```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```  
   
-- Step 4 : Restart your computer to complete the installation : ```shutdown /r```   
-
-- Step 5 : Then update/install WSL : ```wsl --update```   
-
-We've just completed the Linux kernel installion process !  
+- Restart your computer to complete the installation : ```shutdown /r```  
+  
+- Then update/install WSL : ```wsl --update```  
+  
+- Complete the installation process : ```wsl --shutdown```    
 
 # II. Install a Linux distro 🐧
 There are [some Linux distros that available on Microsoft Store](https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-6---install-your-linux-distribution-of-choice)  
 But I like somthing special, I went with :   
 - [Arch Linux](https://github.com/xhuy0404/tech-tips/edit/main/Windows%20Subsystem%20for%20Linux.md#option-1---arch-linux-installation-guide) : Lightweight & Up-to-date !   
-- [Gentoo Linux](https://github.com/xhuy0404/tech-tips/edit/main/Windows%20Subsystem%20for%20Linux.md#option-2---gentoo-linux-installation-guide) : Even more lightweight than Arch ! But you'll need a good CPU and time for compiling packages yourself.
-
+- [Gentoo Linux](https://github.com/xhuy0404/tech-tips/edit/main/Windows%20Subsystem%20for%20Linux.md#option-2---gentoo-linux-installation-guide) : Even more lightweight than Arch ! But you'll need a good CPU and time for compiling packages yourself...  
   
 ## Option 1 - Arch Linux installation guide  
 ### References  
@@ -30,18 +26,21 @@ But I like somthing special, I went with :
 - [Original guide](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b)  
 
 ### Basic Installation  
-- Download [ArchWSL installer zip](https://github.com/yuk7/ArchWSL/releases/latest) , pick a folder (For example, ```C:\Arch```) for Arch Linux and run **Arch.exe** in that folder.  
+- Download [ArchWSL installer zip](https://github.com/yuk7/ArchWSL/releases/latest) , pick a folder (For example, ```C:\Arch```) for Arch Linux and extract **Arch.zip** in that folder.  
   
-- Then start Arch by run **Arch.exe** again.  
+- Then run **Arch.exe** to start the installtion process : ```C:\Arch\Arch.exe```
+
+- Then start Arch in WSL by : ```wsl -d Arch``` or just ```wsl``` if Arch is your default/first WSL distro.  
   
 ### Initialize package manager  
-- Refresh Pacman GPG keys :    
+- Refresh Pacman GPG keys (It will take a while) :  
   ```  
   pacman-key --init  
   pacman-key --populate  
   pacman-key --refresh-keys  
   pacman -Sy archlinux-keyring --noconfirm  
   ```  
+> Tip : You can use this command to clear the screen : ```clear```  
   
 - Then run ```pacman -Syyu``` to update all packages to the latest versions  
   
@@ -59,10 +58,13 @@ But I like somthing special, I went with :
 - Set the password for that user : ```passwd xhuy0```  
   
 - Set default user : ```echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf```  
-### Finalize
+
+### Finalize  
+- Finalize the installation : ```wsl --shutdown```  
+  
+Now, if Arch is your fist/default WSL distro, it will launch everytime you start WSL
 
 **Welcome to Arch Linux !**  
-You can finds everything else you need on the Internet. Keep learning !⚡  
 
 ## Option 2 - Gentoo Linux installation guide (UNFINISHED)
 ### References :  
