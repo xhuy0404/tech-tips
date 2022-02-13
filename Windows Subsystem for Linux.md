@@ -62,7 +62,7 @@ But I like somthing special, I went with :
 ### Finalize  
 - Finalize the installation : ```wsl --shutdown```  
   
-Now, if Arch is your fist/default WSL distro, it will launch everytime you start WSL
+Now, if Arch is your fist/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
 
 **Welcome to Arch Linux !**  
 
