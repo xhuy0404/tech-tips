@@ -70,4 +70,3 @@ Now, if Arch is your fist/default WSL distro, it will launch everytime you start
 ### References :  
 - [Gentoo Linux introduction page](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/About#Welcome)  
 - [Original guide](https://wiki.gentoo.org/wiki/Gentoo_in_WSL)
-
