@@ -30,14 +30,22 @@ But I like somthing special, I went with :
 - [Original guide](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b)  
 
 ### Basic Installation :  
-- Step 1 : Download [ArchWSL installer zip](https://github.com/yuk7/ArchWSL/releases/latest) , pick a folder (For example, C:\Arch) for Arch Linux and run installer .exe in that folder.  
+- Step 1 : Download [ArchWSL installer zip](https://github.com/yuk7/ArchWSL/releases/latest) , pick a folder (For example, C:\Arch) for Arch Linux and run **Arch.exe** in that folder.  
+  Then start Arch by run **Arch.exe** again.  
   
-- Step 2 : Initialize package manager (It would take a while)  
+### Initialize package manager  
   ```pacman-key --init; pacman-key --populate; pacman-key --refresh-keys; pacman -Sy archlinux-keyring --noconfirm```  
+  (It would take a while)  
   
-- Step 3 : Run ```pacman -Syyu``` to update all packages to the latest versions  
+  Then run ```pacman -Syyu``` to update all packages to the latest versions  
 
-- Step 4 : 
+- Step 4 : Create a user  
+  Add a sudo group: ```groupadd sudo```  
+  Uncomment line '%wheel ALL=(ALL) NOPASSWD: ALL' in /etc/sudoers : ```sed "/NOPASSWD/s/^#//g" -i /etc/sudoers```  
+  Uncomment line '%sudo ALL=(ALL) ALL' in /etc/sudoers : ```sed "/%sudo/s/^#//g" -i /etc/sudoers```  
+  Add a new admin user : ```useradd -m -G wheel <yourusername>```  
+  Set the password for that user : ```passwd <yourusername>```  
+  
 ## Option 2 - Gentoo Linux installation guide  
 ### References :  
 - [Gentoo Linux introduction page](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/About#Welcome)  
