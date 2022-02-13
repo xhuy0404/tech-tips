@@ -1,4 +1,4 @@
-# My knowledge about technology
+# My knowledge about general computer technology
 
 All of these documents are based on my personal experience.
 
