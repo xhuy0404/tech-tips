@@ -34,18 +34,19 @@ But I like somthing special, I went with :
   
 ### Initialize package manager  
 - Refresh Pacman GPG keys (It will take a while) :    
+  ```
   pacman-key --init
   pacman-key --populate
   pacman-key --refresh-keys
   pacman -Sy archlinux-keyring --noconfirm  
-  
+  ```
 > Tip : You can use this command to clear the screen : ```clear```  
   
 - Then run ```pacman -Syyu``` to update all packages to the latest versions  
-  
+> When asked question on hwdi/adwaita, choose whaterver you want :)  
 ### Create a user  
 - Uncomment ```%wheel ALL=(ALL) NOPASSWD: ALL``` and ```%sudo ALL=(ALL) ALL``` in ```/etc/sudoers``` :  
-  ```
+  ```  
   sed "/NOPASSWD/s/^#//g" -i /etc/sudoers  
   sed "/%sudo/s/^#//g" -i /etc/sudoers  
   ```  
@@ -63,18 +64,22 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
 
 **Welcome to Arch Linux !**  
 
-### **Extra** : Install AUR Helper (yay)
+### Install AUR Helper (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
-- ```sudo pacman -S base-devel git openssh go```
-  When asked question on fakeroot and fakeroot-tcp choose whatever you want :)  
-  ```
-  cd $HOME
-  git clone https://aur.archlinux.org/yay-git.git
-  cd yay-git
-  makepkg -si
-  rm -rf ~/yay-git
-  ```
+- ```sudo pacman -S base-devel git openssh go```  
+> When asked question on fakeroot and fakeroot-tcp, choose whatever you want :)  
+- Then run the following commands :  
+  ```  
+  cd $HOME  
+  git clone https://aur.archlinux.org/yay-git.git  
+  cd yay-git  
+  makepkg -si  
+  rm -rf ~/yay-git  
+  ```  
+  
+### Install ZSH & Powerlevel10k (Optional)  
 
+  
 ## Option 2 - Gentoo Linux installation guide (Still Compiling)
 ### References :  
 - [Gentoo Linux introduction page](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/About#Welcome)  
