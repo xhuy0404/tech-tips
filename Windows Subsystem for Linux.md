@@ -1,7 +1,7 @@
 # I. Enable WSL/WSL2 on your Windows PC 💿
 Just-the-recipes version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
-Make sure you enabled **Virtualization** in your BIOS before doing this.  
+Make sure you enabled **Virtualization** in your **BIOS** before doing this.  
 - Use this command to enable **WSL** feature (as administrator) :  
   ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```  
   
