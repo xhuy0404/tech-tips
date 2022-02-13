@@ -45,8 +45,6 @@ But I like somthing special, I went with :
 - Then run ```pacman -Syyu``` to update all packages to the latest versions  
   
 ### Create a user  
-- Add a sudo group: ```groupadd sudo```  
-  
 - Uncomment ```%wheel ALL=(ALL) NOPASSWD: ALL``` and ```%sudo ALL=(ALL) ALL``` in ```/etc/sudoers``` :  
   ```
   sed "/NOPASSWD/s/^#//g" -i /etc/sudoers  
@@ -66,7 +64,7 @@ Now, if Arch is your fist/default WSL distro, it will launch everytime you start
 
 **Welcome to Arch Linux !**  
 
-## Option 2 - Gentoo Linux installation guide (UNFINISHED)
+## Option 2 - Gentoo Linux installation guide (Still Compiling)
 ### References :  
 - [Gentoo Linux introduction page](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/About#Welcome)  
 - [Original guide](https://wiki.gentoo.org/wiki/Gentoo_in_WSL)
