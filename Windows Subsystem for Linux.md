@@ -33,13 +33,12 @@ But I like somthing special, I went with :
 - Then start Arch in WSL by : ```wsl -d Arch``` or just ```wsl``` if Arch is your default/first WSL distro.  
   
 ### Initialize package manager  
-- Refresh Pacman GPG keys (It will take a while) :  
-  ```  
+- Refresh Pacman GPG keys (It will take a while) :    
   pacman-key --init
   pacman-key --populate
   pacman-key --refresh-keys
-  pacman -Sy archlinux-keyring --noconfirm
-  ```  
+  pacman -Sy archlinux-keyring --noconfirm  
+  
 > Tip : You can use this command to clear the screen : ```clear```  
   
 - Then run ```pacman -Syyu``` to update all packages to the latest versions  
@@ -60,9 +59,21 @@ But I like somthing special, I went with :
 ### Finalize  
 - Finalize the installation : ```wsl --shutdown```  
   
-Now, if Arch is your fist/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
+Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
 
 **Welcome to Arch Linux !**  
+
+### **Extra** : Install AUR Helper (yay)
+[Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
+- ```sudo pacman -S base-devel git openssh go```
+  When asked question on fakeroot and fakeroot-tcp choose whatever you want :)  
+  ```
+  cd $HOME
+  git clone https://aur.archlinux.org/yay-git.git
+  cd yay-git
+  makepkg -si
+  rm -rf ~/yay-git
+  ```
 
 ## Option 2 - Gentoo Linux installation guide (Still Compiling)
 ### References :  
