@@ -42,7 +42,8 @@
   
 - Shutdown the WSL : ```wsl --shutdown```  
   
-Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
+Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. 
+Otherwise, you can use ```wsl -d Arch``` to start it or ```wsl -s Arch``` to set it to default WSL distro.
 
 **Welcome to Arch Linux !**  
 ## Extras
