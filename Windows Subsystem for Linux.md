@@ -92,12 +92,13 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
   ```  
   
-- Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#readme) :  
-  ```
-  cd $HOME  
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
+- Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k#readme) :  
+  Make sure the default font of your Terminal app (I'm using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701)) is a [nerd font](https://www.nerdfonts.com/font-downloads).  
   ```  
-  
+  cd $HOME  
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k  
+  ```
+  Then Set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ```~/.zshrc```  
   
 Bonus
   
