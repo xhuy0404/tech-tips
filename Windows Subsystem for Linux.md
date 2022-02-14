@@ -43,7 +43,7 @@ But I like somthing special, I went with :
 > Tip : You can use this command to clear the terminal screen : ```clear```  
   
 - Then run ```pacman -Syyu``` to update all packages to the latest versions  
-> When asked question on hwids, choose yes (default option)  
+> When asked question on hwids, choose Yes (default option)  
 ### Create a user  
 - Uncomment ```%wheel ALL=(ALL:ALL) ALL``` and ```%sudo ALL=(ALL) ALL``` in ```/etc/sudoers``` :  
   ```  
@@ -60,8 +60,6 @@ But I like somthing special, I went with :
 ### Finalize  
 - Open a Windows shell : ```cmd.exe```  
   
-<!-- - Set default user : ```C:\Arch\Arch.exe config --default-user```   -->
-  
 - Shutdown the WSL : ```wsl --shutdown```  
   
 Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
@@ -71,7 +69,7 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
 ### Install AUR Helper - yay (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
 - ```sudo pacman -S base-devel git openssh go```  
-> When asked question on fakeroot and fakeroot-tcp, choose whatever you want :)  
+> When asked question on fakeroot and fakeroot-tcp, choose No (default option)  
 - Then run the following commands :  
   ```  
   cd $HOME  
