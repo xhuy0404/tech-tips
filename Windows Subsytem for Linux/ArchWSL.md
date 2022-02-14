@@ -22,6 +22,10 @@
   
 - Then run `pacman -Syyu` to update all packages to the latest versions  
 > When asked question on hwids, choose Yes (default option)  
+
+- Install **base-devel** group (and other packages if you want) : `pacman -S base-devel git openssh wget`  
+> When asked question on fakeroot, choose No  
+
 ## Create a user  
 - Uncomment `%wheel ALL=(ALL:ALL) ALL` and `%sudo ALL=(ALL) ALL` in `/etc/sudoers` :  
   ```  
@@ -36,8 +40,6 @@
 - Set default user : `echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf`  
 
 ## Finalize  
-- Install some useful packages : `pacman -S base-devel git openssh wget`  
-
 - Open a Windows shell : `cmd.exe`  
   
 - Shutdown the WSL : `wsl --shutdown`  
@@ -49,8 +51,6 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
 ## Extras
 ### Install AUR Helper - yay (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
-- `sudo pacman -S base-devel git openssh go`  
-> When asked question on fakeroot and fakeroot-tcp, choose Yes  
 - Then run the following commands :  
   ```  
   cd $HOME  
@@ -58,7 +58,7 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
   cd yay-git  
   makepkg -si  
   ```  
-- Remove the leftovers : `rm -rf ~/yay-git` 
+- Remove the leftovers : `rm -rf ~/yay-git`  
   
 ### [Install ZSH & Powerlevel10k](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/Zsh%20with%20Powerlevel10k.md) (Optional)  
 
