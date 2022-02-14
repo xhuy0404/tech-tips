@@ -15,6 +15,20 @@
   ```  
 
 ## Install Oh-my-zsh's plugins (Optional)
+
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) : 
+  ```
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) :  
+  ```
+  
+  ```
+  
+  
+  Then add them  
+  
   
 ## Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k#readme)  
   Make sure the default font of your Terminal app (I'm using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701)) is a [nerd font](https://www.nerdfonts.com/font-downloads).  
