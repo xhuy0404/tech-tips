@@ -50,7 +50,7 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
 ### Install AUR Helper - yay (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
 - `sudo pacman -S base-devel git openssh go`  
-> When asked question on fakeroot and fakeroot-tcp, choose No (default option)  
+> When asked question on fakeroot and fakeroot-tcp, choose Yes  
 - Then run the following commands :  
   ```  
   cd $HOME  
