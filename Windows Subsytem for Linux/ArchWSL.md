@@ -60,23 +60,5 @@ Otherwise, you can use ```wsl -d Arch``` to start it or ```wsl -s Arch``` to set
   rm -rf ~/yay-git  
   ```  
   
-### Install ZSH & Powerlevel10k (Optional)  
-- Install [Zsh](https://wiki.archlinux.org/title/zsh) : ```sudo pacman -S zsh```  
+### [Install ZSH & Powerlevel10k](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/Zsh%20with%20Powerlevel10k.md) (Optional)  
 
-- Start Zsh : ```zsh```  
-
-- Change your shell to Zsh : ```chsh -s /bin/zsh```  
-
-- Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) :  
-  ```
-  cd $HOME  
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
-  ```  
-  
-- Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k#readme) :  
-  Make sure the default font of your Terminal app (I'm using [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701)) is a [nerd font](https://www.nerdfonts.com/font-downloads).  
-  ```  
-  cd $HOME  
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k  
-  ```
-  Then set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ```~/.zshrc```  
