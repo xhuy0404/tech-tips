@@ -8,7 +8,7 @@
 
 - Change your shell to Zsh : ```chsh -s /bin/zsh```  
 
-## Install [oh-my-zsh](https://ohmyz.sh/) :  
+## Install [Oh-my-zsh](https://ohmyz.sh/) :  
   ```
   cd $HOME  
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
