@@ -84,7 +84,9 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
 ### Install ZSH & Powerlevel10k (Optional)  
 - Install [Zsh](https://wiki.archlinux.org/title/zsh) : ```sudo pacman -S zsh```  
 
-- Change your shell to Zsh : ```chsh -s /bin/zsh```
+- Start Zsh : ```zsh```  
+
+- Change your shell to Zsh : ```chsh -s /bin/zsh```  
 
 - Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) :  
   ```
@@ -94,9 +96,12 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
   
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#readme) :  
   ```
+  cd $HOME  
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k  
-  echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc  
-  ```
+  ```  
+  
+  
+Bonus
   
 ## Option 2 - Gentoo Linux installation guide (Still Compiling)
 ### References :  
