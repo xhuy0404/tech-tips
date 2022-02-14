@@ -25,7 +25,7 @@
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   ```
   
-Then add them to `~/.zshrc` at the line `plugins=(... [new plugin])`  
+Then add them to `~/.zshrc` at the line `plugins=(...)`  
 For example : `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`  
   
 ## Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k#readme)  
