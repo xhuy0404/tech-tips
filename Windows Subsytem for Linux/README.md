@@ -17,7 +17,7 @@ Make sure you enabled **Virtualization** in your **BIOS** before doing this.
 # II. Install a Linux distro 🐧
 There are [some Linux distros that available on Microsoft Store](https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-6---install-your-linux-distribution-of-choice)  
 But I like somthing special, I went with :   
-- [Arch Linux](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/README.md#option-1---arch-linux-installation-guide) : Lightweight & Up-to-date !   
+- [Arch Linux](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/ArchWSL.md) : Lightweight & Up-to-date !   
 - [Gentoo Linux](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/README.md#option-2---gentoo-linux-installation-guide-still-compiling) : Even more lightweight than Arch ! But you'll need a good CPU and really MUCH time for compiling packages yourself...  
   
 ## Option 2 - Gentoo Linux installation guide (Still Compiling)
