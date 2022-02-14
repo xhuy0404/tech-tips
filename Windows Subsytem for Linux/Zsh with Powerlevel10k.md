@@ -1,8 +1,8 @@
 # Zsh + Powerlevel10k Installation guide
 ## Install [Zsh](https://zsh.sourceforge.io/)   
-- Arch Linux : ```sudo pacman -S zsh```  
+- On Arch Linux : ```sudo pacman -S zsh```  
 
-- Gentoo Linux : ```emerge --ask app-shells/zsh```  
+- On Gentoo Linux : ```emerge --ask app-shells/zsh```  
 
 - Start Zsh : ```zsh```  
 
