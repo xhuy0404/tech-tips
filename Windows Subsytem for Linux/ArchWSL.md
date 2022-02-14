@@ -20,36 +20,36 @@
   ```
 > Tip : You can use this command to clear the terminal screen : ```clear```  
   
-- Then run ```pacman -Syyu``` to update all packages to the latest versions  
+- Then run `pacman -Syyu` to update all packages to the latest versions  
 > When asked question on hwids, choose Yes (default option)  
 ## Create a user  
-- Uncomment ```%wheel ALL=(ALL:ALL) ALL``` and ```%sudo ALL=(ALL) ALL``` in ```/etc/sudoers``` :  
+- Uncomment `%wheel ALL=(ALL:ALL) ALL` and `%sudo ALL=(ALL) ALL` in `/etc/sudoers` :  
   ```  
   sed '82s/^#//' -i /etc/sudoers  
   sed '88s/^#//' -i /etc/sudoers  
   ```  
   
-- Add a new admin user (replace **xhuy0** with your username) : ```useradd -m -G wheel xhuy0```  
+- Add a new admin user (replace **xhuy0** with your username) : `useradd -m -G wheel xhuy0`  
   
-- Set the password for that user : ```passwd xhuy0```  
+- Set the password for that user : `passwd xhuy0`  
   
-- Set default user : ```echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf```  
+- Set default user : `echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf`  
 
 ## Finalize  
-- Install some useful packages : ```pacman -S base-devel git openssh wget```  
+- Install some useful packages : `pacman -S base-devel git openssh wget`  
 
-- Open a Windows shell : ```cmd.exe```  
+- Open a Windows shell : `cmd.exe`  
   
-- Shutdown the WSL : ```wsl --shutdown```  
+- Shutdown the WSL : `wsl --shutdown`  
   
 Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. 
-Otherwise, you can use ```wsl -d Arch``` to start it or ```wsl -s Arch``` to set it to default WSL distro.
+Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to default WSL distro.
 
 **Welcome to Arch Linux !**  
 ## Extras
 ### Install AUR Helper - yay (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
-- ```sudo pacman -S base-devel git openssh go```  
+- `sudo pacman -S base-devel git openssh go`  
 > When asked question on fakeroot and fakeroot-tcp, choose No (default option)  
 - Then run the following commands :  
   ```  
@@ -57,8 +57,8 @@ Otherwise, you can use ```wsl -d Arch``` to start it or ```wsl -s Arch``` to set
   git clone https://aur.archlinux.org/yay-git.git  
   cd yay-git  
   makepkg -si  
-  rm -rf ~/yay-git  
   ```  
+- Remove the leftovers : `rm -rf ~/yay-git` 
   
 ### [Install ZSH & Powerlevel10k](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/Zsh%20with%20Powerlevel10k.md) (Optional)  
 
