@@ -58,6 +58,8 @@ But I like somthing special, I went with :
 - Set default user : ```echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf```  
 
 ### Finalize  
+- Install some useful packages : ```pacman -S base-devel git openssh wget```  
+
 - Open a Windows shell : ```cmd.exe```  
   
 - Shutdown the WSL : ```wsl --shutdown```  
@@ -98,7 +100,7 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
   cd $HOME  
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k  
   ```
-  Then Set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ```~/.zshrc```  
+  Then set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ```~/.zshrc```  
   
 Bonus
   
