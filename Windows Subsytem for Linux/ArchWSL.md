@@ -1,3 +1,4 @@
+# Arch Linux installation guide
 ## References  
 - [Arch Linux introduction page](https://wiki.archlinux.org/title/Arch_Linux)  
 - [Original guide](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b)  
