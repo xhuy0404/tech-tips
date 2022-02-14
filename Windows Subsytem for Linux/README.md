@@ -19,8 +19,3 @@ There are [some Linux distros that available on Microsoft Store](https://docs.mi
 But I like somthing special, I went with :   
 - [Arch Linux](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/ArchWSL.md) : Lightweight & Up-to-date !   
 - [Gentoo Linux](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/README.md#option-2---gentoo-linux-installation-guide-still-compiling) : Even more lightweight than Arch ! But you'll need a good CPU and really MUCH time for compiling packages yourself...  
-  
-## Option 2 - Gentoo Linux installation guide (Still Compiling)
-### References :  
-- [Gentoo Linux introduction page](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/About#Welcome)  
-- [Original guide](https://wiki.gentoo.org/wiki/Gentoo_in_WSL)
