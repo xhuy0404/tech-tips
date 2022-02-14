@@ -48,8 +48,8 @@ Now, if Arch is your first/default WSL distro, it will launch everytime you star
 Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to default WSL distro.
 
 **Welcome to Arch Linux !**  
-## Extras
-### Install AUR Helper - yay (Optional)
+## Extras (Optional)
+### Install AUR Helper - yay
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
 - Then run the following commands :  
   ```  
@@ -60,5 +60,5 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
   ```  
 - Remove the leftovers : `rm -rf ~/yay-git`  
   
-### [Install ZSH & Powerlevel10k](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/Zsh%20with%20Powerlevel10k.md) (Optional)  
+### [Install ZSH & Powerlevel10k](https://github.com/xhuy0404/tech-tips/blob/main/Windows%20Subsytem%20for%20Linux/Zsh%20with%20Powerlevel10k.md)  
 
