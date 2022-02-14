@@ -45,7 +45,7 @@
 Now, if Arch is your first/default WSL distro, it will launch everytime you start WSL. Otherwise, you can use ```wsl -d Arch``` to start it.
 
 **Welcome to Arch Linux !**  
-
+## Extras
 ### Install AUR Helper - yay (Optional)
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
 - ```sudo pacman -S base-devel git openssh go```  
