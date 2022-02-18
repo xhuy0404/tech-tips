@@ -35,4 +35,7 @@ For example : `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
 - `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`  
   
 Then set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ```~/.zshrc```  
+
+## Customize Powerlevel10k
+
   
