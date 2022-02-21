@@ -111,7 +111,7 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
 Then add them to `~/.zshrc` at the line `plugins=(...)`  
 For example : `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`  
 
-### Install Powerlevel10k  
+### Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k)  
 - `cd $HOME` (or the directory of /oh-my-zsh)  
 - `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`  
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`  
