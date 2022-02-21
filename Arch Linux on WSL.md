@@ -4,18 +4,18 @@ Just-the-recipes version of : https://docs.microsoft.com/en-us/windows/wsl/insta
 
 Make sure you enabled **Virtualization** in your **BIOS** before doing this.  
 - Use this command in a terminal app (as administrator) to enable **Windows Subsystem for Linux** feature :  
-  ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```  
+  `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`  
   
 - Then enable **Virtual Machine Platform** feature :  
-  ```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```  
+  `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`  
   
 - Restart your computer to complete the installation : ```shutdown /r```  
   
-- Then update/install WSL : ```wsl --update```  
+- Then update/install WSL : `wsl --update`  
   
-- Complete the installation process : ```wsl --shutdown```    
+- Complete the installation process : `wsl --shutdown`    
 
-## Install Arch  💽
+## Install Arch 💾
 ![image](https://user-images.githubusercontent.com/85998116/154880089-c00634f4-0cd8-412d-aeed-fdc417fb6dca.png)  
 > Fastfetch, a "useful" tool on Linux ...  
 ### References  
@@ -23,11 +23,11 @@ Make sure you enabled **Virtualization** in your **BIOS** before doing this.
 - [Original guide](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b)  
 
 ### Basic Installation  
-- Download [ArchWSL installer zip](https://github.com/yuk7/ArchWSL/releases/latest) , pick a folder (For example, ```C:\Arch```) for Arch Linux and extract **Arch.zip** in that folder.  
+- Download [ArchWSL installer zip](https://github.com/yuk7/ArchWSL/releases/latest) , pick a folder (For example, `C:\Arch`) for Arch Linux and extract **Arch.zip** in that folder.  
   
-- Then run **Arch.exe** to start the installtion process : ```C:\Arch\Arch.exe```
+- Then run **Arch.exe** to start the installtion process : `C:\Arch\Arch.exe`
 
-- Then start Arch in WSL by : ```wsl -d Arch``` or just ```wsl``` if Arch is your default/first WSL distro.  
+- Then start Arch in WSL by : `wsl -d Arch` or just `wsl` if Arch is your default/first WSL distro.  
   
 ### Initialize package manager  
 - Refresh Pacman GPG keys (It will take a while) :    
@@ -68,7 +68,7 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
 
 **Welcome to Arch Linux !**  
 
-### Install AUR Helper - yay (Optional)
+### Install AUR Helper - yay (Optional)  
 [Original guide](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)  
 - Then run the following commands :  
   ```  
@@ -95,12 +95,12 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
 - `cd $HOME` (the place you want to install oh-my-zsh)  
 - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`  
 
-### Install Oh-my-zsh's plugins (Optional)
-- `cd $HOME` (or the directory of /oh-my-zsh)
+### Install Oh-my-zsh's plugins (Optional)  
+- `cd $HOME` (or the directory of /oh-my-zsh)  
   
-- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) : 
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) :  
   ```
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions  
   ```
 
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) :  
@@ -110,3 +110,9 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
   
 Then add them to `~/.zshrc` at the line `plugins=(...)`  
 For example : `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`  
+
+### Install Powerlevel10k  
+- `cd $HOME` (or the directory of /oh-my-zsh)  
+- `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`  
+- Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`  
+- For advanced settings : `nano ~/.pk.zsh`  
