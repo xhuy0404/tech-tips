@@ -1,5 +1,5 @@
 # Arch Linux on WSL Installation Guide  
-## Enable WSL/WSL2 on your Windows PC 💿
+## Enable WSL/WSL2 on your Windows PC  💻
 Just-the-recipes version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 Make sure you enabled **Virtualization** in your **BIOS** before doing this.  
@@ -15,7 +15,9 @@ Make sure you enabled **Virtualization** in your **BIOS** before doing this.
   
 - Complete the installation process : ```wsl --shutdown```    
 
-## Install Arch
+## Install Arch  💽
+![image](https://user-images.githubusercontent.com/85998116/154880089-c00634f4-0cd8-412d-aeed-fdc417fb6dca.png)  
+> Fastfetch, a "useful" tool on Linux ...  
 ### References  
 - [Arch Linux introduction page](https://wiki.archlinux.org/title/Arch_Linux)  
 - [Original guide](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b)  
@@ -77,8 +79,9 @@ Otherwise, you can use `wsl -d Arch` to start it or `wsl -s Arch` to set it to d
   ```  
 - Remove the leftovers : `rm -rf ~/yay-git`  
 
-
-## Zsh with Powerlevel10k (Optional) 
+## Zsh with Powerlevel10k (Optional)  ✨  
+![image](https://user-images.githubusercontent.com/85998116/154880423-6fea82e4-9dd4-4fe7-9e45-1feec2073916.png)  
+> Zsh with Oh-my-zsh & Powerlevelk
 ### Install [Zsh](https://zsh.sourceforge.io/)   
 - On Arch Linux : ```sudo pacman -S zsh```  
 
