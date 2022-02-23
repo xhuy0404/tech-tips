@@ -56,7 +56,7 @@ Make sure you enabled **Virtualization** in your **BIOS** before doing this.
   
 - Set the password for that user : `passwd xhuy0`  
   
-- Set default user : `echo -e "[user]\ndefault=xhuy0\n" > /etc/wsl.conf`  
+- Set default user : `echo -e "[user]\ndefault = xhuy0\n" > /etc/wsl.conf`  
 
 ### Finalize  
 - Open a Windows shell : `cmd.exe`  
