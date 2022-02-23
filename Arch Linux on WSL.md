@@ -115,4 +115,4 @@ For example : `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
 - `cd $HOME` (or the directory of /oh-my-zsh)  
 - `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`  
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`  
-- For advanced settings : `nano ~/.pk.zsh`  
+- For advanced settings : `nano ~/.p10k.zsh`  
