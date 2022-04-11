@@ -1,4 +1,5 @@
 # Arch Linux on WSL Installation Guide  
+In case you really love Arch and need an easy way to install it, i suggest [Arch Linux GUI](https://archlinuxgui.in/download.html)
 ## Enable WSL/WSL2 on your Windows PC  💻
 Just-the-recipes version of : https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
